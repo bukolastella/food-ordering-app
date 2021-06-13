@@ -1,4 +1,4 @@
-import { Route, Redirect, Switch } from "react-router";
+import { HashRouter, Route, Redirect, Switch } from "react-router-dom";
 import classes from "./App.module.css";
 import React from "react";
 import FrontPage from "./pages/front-page/FrontPage";
@@ -7,31 +7,33 @@ import AuthContext from "./store/auth-context";
 
 function App() {
   return (
-    <AuthContext.Provider
-      value={{
-        cartData: [],
-      }}
-    >
-      <div className={classes.App}>
-        <Switch>
-          <Route path="/" exact>
-            <Redirect to="/salad/popular" />
-          </Route>
-          <Route path={`/:mealCat/popular`} exact>
-            <FrontPage />
-          </Route>
-          <Route path={`/:mealCat/popular/view-all`} exact>
-            <FrontPage />
-          </Route>
-          <Route path={`/cart-page`} exact>
-            <CartPage />
-          </Route>
-          <Route path="*">
-            <p>page not found</p>
-          </Route>
-        </Switch>
-      </div>
-    </AuthContext.Provider>
+    <HashRouter basename="/">
+      <AuthContext.Provider
+        value={{
+          cartData: [],
+        }}
+      >
+        <div className={classes.App}>
+          <Switch>
+            <Route path="/" exact>
+              <Redirect to="/salad/popular" />
+            </Route>
+            <Route path={`/:mealCat/popular`} exact>
+              <FrontPage />
+            </Route>
+            <Route path={`/:mealCat/popular/view-all`} exact>
+              <FrontPage />
+            </Route>
+            <Route path={`/cart-page`} exact>
+              <CartPage />
+            </Route>
+            <Route path="*">
+              <p>page not found</p>
+            </Route>
+          </Switch>
+        </div>
+      </AuthContext.Provider>
+    </HashRouter>
   );
 }
 
