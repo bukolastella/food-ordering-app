@@ -45,3 +45,8 @@
     height: 750px;
   }
 }
+@media (min-width: 1000px) {
+  .Details {
+    height: 870px;
+  }
+}
