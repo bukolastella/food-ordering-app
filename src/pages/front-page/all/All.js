@@ -83,10 +83,8 @@ const All = (props) => {
   let reveal = pricesArray.map((ev, index) => {
     if (index > 3) {
       z = index + b;
-      console.log(z);
     } else {
       z = index + a;
-      console.log(z);
     }
     return (
       <PopularDish

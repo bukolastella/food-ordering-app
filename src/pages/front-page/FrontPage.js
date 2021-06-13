@@ -48,7 +48,7 @@ const FrontPage = () => {
     try {
       popularDish();
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   }, [params.mealCat]);
 

@@ -1,10 +1,12 @@
 import classes from "./PageHeader.module.css";
-import React from "react";
+import React, { useContext } from "react";
 import Search from "./Search";
 import Square from "./Square";
 import { Link } from "react-router-dom";
+import AuthContext from "../../store/auth-context";
 
 const PageHeader = (props) => {
+  const ctx = useContext(AuthContext);
   return (
     <div className={classes.PageHeader}>
       <Square className={classes.home}>
@@ -17,7 +19,7 @@ const PageHeader = (props) => {
         <i className="far fa-user"></i>
       </Square>
       <div className={classes["Total-cart"]}>
-        <span className={classes.Item}>{props.zaItem}</span>
+        <span className={classes.Item}>{ctx.cartData.length}</span>
         <Square className={classes.cart}>
           <Link to="/cart-page">
             <i className="fas fa-shopping-cart fa-2x"></i>
