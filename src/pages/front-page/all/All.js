@@ -7,6 +7,8 @@ import classes from "./All.module.css";
 const All = (props) => {
   const [changeState, setChangeState] = useState(false);
   const [state, setState] = useState(props.sortState);
+  const [, setstate] = useState(false);
+
   // eslint-disable-next-line
   const [altState, setAltstate] = useState(false);
 
@@ -53,9 +55,22 @@ const All = (props) => {
     b = 21;
   }
   const addCartHandler = (id) => {
-    const selectedFood = props.popularState.find((ev) => ev.id === id);
+    // const selectedFood = props.popularState.find((ev) => ev.id === id);
+    // ctx.cartData.push({ ...selectedFood, quantity: 1 });
+    // setAltstate((prev) => !prev);
+    const existing = ctx.cartData.findIndex((ev) => ev.id === id);
+    const existingCart = ctx.cartData[existing];
+    if (existingCart) {
+      //undefined.part of the cart.
+      props.item(ctx.cartData.length - 1);
+      ctx.cartData = [...ctx.cartData.filter((ev) => ev.id !== id)];
+      setstate((prev) => !prev);
+      return;
+    }
+    const selectedFood = props.sortState.find((ev) => ev.id === id);
     ctx.cartData.push({ ...selectedFood, quantity: 1 });
-    setAltstate((prev) => !prev);
+    props.item(ctx.cartData.length);
+    setstate((prev) => !prev);
   };
   const pricesArray = [...state];
 

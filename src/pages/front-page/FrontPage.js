@@ -70,7 +70,7 @@ const FrontPage = () => {
       <CategoryNav />
       <Switch>
         <Route path="/:mealCat/popular/view-all">
-          <All sortState={popularState} par={params.mealCat} />
+          <All sortState={popularState} par={params.mealCat} item={pass} />
         </Route>
         <Route path={`/:mealCat/popular`} exact>
           <Popular loading={loading} popularState={popularState} item={pass} />
