@@ -10,7 +10,7 @@ const PageHeader = (props) => {
   return (
     <div className={classes.PageHeader}>
       <Square className={classes.home}>
-        <Link to="/salad/popular">
+        <Link to="/salad/popular" className={classes.Linkhome}>
           <i className="fas fa-home fa-2x"></i>
         </Link>
       </Square>
@@ -21,7 +21,7 @@ const PageHeader = (props) => {
       <div className={classes["Total-cart"]}>
         <span className={classes.Item}>{ctx.cartData.length}</span>
         <Square className={classes.cart}>
-          <Link to="/cart-page">
+          <Link to="/cart-page" className={classes.Linkcart}>
             <i className="fas fa-shopping-cart fa-2x"></i>
           </Link>
         </Square>

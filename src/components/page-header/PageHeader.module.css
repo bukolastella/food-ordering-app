@@ -1,8 +1,12 @@
 .home {
   background-color: #fcbc30;
   color: white;
-  cursor: pointer;
+  /* cursor: pointer; */
   text-decoration: none;
+}
+.Linkhome,
+.Linkcart {
+  cursor: pointer;
 }
 .home a {
   color: white;
@@ -23,7 +27,7 @@
 }
 .Total-cart {
   position: relative;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .Item {
   position: absolute;
