@@ -20,15 +20,19 @@
   flex-direction: column;
   transition: 0.2s ease-out;
 }
-
-.PopularDish:hover {
-  color: white;
-  background-color: #fcbc30;
+@media (hover: hover) {
+  .PopularDish:hover {
+    color: white;
+    background-color: #fcbc30;
+  }
+  .PopularDish:hover .Cart {
+    color: white;
+  }
+  .PopularDish:hover .Para {
+    color: white;
+  }
 }
 
-.PopularDish:hover .Cart {
-  color: white;
-}
 .Cart {
   color: #fcbc30;
 }
@@ -49,9 +53,6 @@
   font-size: 0.8rem;
   color: gray;
   margin: 0.5rem 0rem;
-}
-.PopularDish:hover .Para {
-  color: white;
 }
 
 .CartNo {
@@ -80,14 +81,14 @@
   transition: 0.2s ease-out;
 }
 
-.PopularDish2:hover {
+/* .PopularDish2:hover {
   color: white;
   background-color: #fcbc30;
-}
+} */
 
-.PopularDish2:hover .Cart {
+/* .PopularDish2:hover .Cart {
   color: white;
-}
+} */
 
 .PopularDish2 img {
   width: 70%;
@@ -108,9 +109,9 @@
   font-size: 1.2rem;
 }
 
-.PopularDish2:hover .Para {
+/* .PopularDish2:hover .Para {
   color: white;
-}
+} */
 /*  */
 @media (max-width: 540px) {
   .PopularDish {

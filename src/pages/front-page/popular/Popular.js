@@ -6,7 +6,6 @@ import Loader from "../../../components/ui/Loader";
 import AuthContext from "../../../store/auth-context";
 
 const Popular = (props) => {
-  // eslint-disable-next-line
   const [, setstate] = useState(false);
   const params = useParams();
   const ctx = useContext(AuthContext);

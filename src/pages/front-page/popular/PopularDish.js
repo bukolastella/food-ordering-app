@@ -8,6 +8,7 @@ const PopularDish = (props) => {
   const addCartHandler = () => {
     props.onAdd(props.id);
   };
+  console.log(props.clicked);
   const k = props.clicked ? classes.PopularDish2 : classes.PopularDish;
   return (
     <div className={classes.Casing}>
