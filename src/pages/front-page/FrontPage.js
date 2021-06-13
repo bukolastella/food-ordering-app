@@ -63,6 +63,7 @@ const FrontPage = () => {
   const pass = (item) => {
     setR(item);
   };
+
   return (
     <div>
       <PageHeader zaItem={R} />
