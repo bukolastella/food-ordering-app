@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid-template-columns: 30px 200px;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 10px;
+}
+.grid span {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  margin: auto;
+  color: #79778d;
+}
+.deli {
+  text-align: left;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.grid input {
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  border: 1px solid #282829e5;
+  border-radius: 5px;
+  margin-top: 0.3rem;
+}

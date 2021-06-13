@@ -1,0 +1,57 @@
+.home {
+  background-color: #fcbc30;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.home a {
+  color: white;
+}
+.user {
+  background-color: #f2f2f2;
+}
+
+.cart {
+  color: #fcbc30;
+  border: 1px solid #fcbc30;
+  background-color: #fdf6e9;
+  text-decoration: none;
+}
+.cart a {
+  color: #fcbc30;
+  background-color: #fdf6e9;
+}
+.Total-cart {
+  position: relative;
+  cursor: pointer;
+}
+.Item {
+  position: absolute;
+  background-color: #09b42f;
+  color: white;
+  top: -10px;
+  left: 30px;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+}
+@media (max-width: 700px) {
+  .home {
+    display: none !important;
+  }
+  .Total-cart {
+    position: fixed;
+    z-index: 1000;
+    right: 30px;
+    bottom: 20px;
+  }
+}

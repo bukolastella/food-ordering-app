@@ -1,0 +1,25 @@
+.IconDetails {
+  padding: 2rem;
+  /* background-color: salmon; */
+  border-bottom: 1px solid #79778d48;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border: 1px solid #fcbc30;
+  padding: 0.6rem;
+  border-radius: 10px;
+}
+@media (max-width: 1000px) {
+  .IconDetails {
+    padding: 1rem;
+  }
+  .icon {
+    top: 15px;
+    right: 20px;
+    padding: 0.4rem;
+  }
+}

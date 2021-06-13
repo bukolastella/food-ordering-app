@@ -1,0 +1,47 @@
+.Title {
+  font-weight: bold;
+  text-transform: capitalize;
+  display: flex;
+  margin: 1rem 0rem;
+}
+.Das {
+  margin: 0rem 0.5rem !important;
+}
+.Title > span {
+  color: #79778d;
+  margin: 0rem 0.3rem;
+}
+.Orders {
+  border: 1px solid #79778d48;
+  border-radius: 15px;
+  margin: 2rem 0rem;
+  padding: 1rem 2rem;
+  height: 760.95px;
+  overflow-y: auto;
+}
+.NoItem {
+  margin: 0rem 2rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+@media (max-width: 1000px) {
+  .Orders {
+    padding: 1rem;
+  }
+}
+@media (max-width: 760px) {
+  .Title {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 700px) {
+  .Title {
+    font-size: 1rem;
+  }
+  .Orders {
+    border: none;
+    margin: 0.5rem 0rem;
+    max-height: 342px;
+    overflow-y: auto;
+  }
+}

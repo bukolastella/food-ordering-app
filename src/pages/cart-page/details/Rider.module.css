@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: 30px 150px;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 20px;
+  align-items: center;
+  text-transform: capitalize;
+  justify-content: flex-start;
+}
+.choose {
+  grid-column: 1/-1;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.age {
+  grid-column: 2/-1;
+  text-align: left;
+}
+
+.ride {
+  font-size: 1.5rem;
+}
+.mark {
+  font-weight: 500;
+  text-align: left;
+}

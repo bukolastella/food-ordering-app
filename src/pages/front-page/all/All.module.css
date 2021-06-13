@@ -1,0 +1,54 @@
+.Popular {
+  padding: 1.5rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  place-items: center;
+}
+.Flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  margin: 2rem 0rem;
+}
+.fal {
+  font-size: 2rem;
+}
+.View {
+  cursor: pointer;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+}
+
+.View i {
+  margin-left: 0.8rem;
+}
+.View form {
+  display: inline-block;
+}
+.select {
+  padding: 0.2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #79778d;
+}
+
+@media (max-width: 540px) {
+  .Popular {
+    /* padding: 1.5rem 0rem; */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    /* place-items: center; */
+  }
+  .Flex {
+    margin: 1rem 0rem;
+  }
+  .Flex h1 {
+    font-size: 1.5rem;
+  }
+}

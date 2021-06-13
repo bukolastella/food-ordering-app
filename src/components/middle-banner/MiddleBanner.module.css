@@ -1,0 +1,40 @@
+.MiddleBanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0rem;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+}
+
+.Flex-end {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+}
+.Last span:first-child {
+  color: #fcbc30;
+}
+@media (max-width: 738px) {
+  .MiddleBanner {
+    padding: 1rem 1.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .MiddleBanner {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    margin: 1rem 0rem;
+  }
+  .Flex {
+    margin-bottom: 1rem;
+    grid-column: 1/-1;
+  }
+  .Flex-end {
+    grid-column: 1/-1;
+
+    justify-content: space-between;
+    width: 100%;
+  }
+}

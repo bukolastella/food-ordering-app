@@ -1,0 +1,47 @@
+.Details {
+  border: 1px solid #79778d48;
+  border-radius: 15px;
+  margin: 2rem 0rem;
+}
+.last {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  display: flex;
+  width: 100%;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.btn {
+  background-color: #fcbb30;
+  color: white;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  width: 80%;
+  /* margin-top: 2rem; */
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #fcbb30cb;
+  color: white;
+}
+@media (max-width: 700px) {
+  .Title {
+    font-size: 1rem;
+  }
+  .Orders {
+    border: none;
+    margin: 0.5rem 0rem;
+  }
+  .Details {
+    margin: 1rem 0rem;
+    height: 750px;
+  }
+}

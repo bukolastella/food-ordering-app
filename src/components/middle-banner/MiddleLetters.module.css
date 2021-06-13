@@ -1,0 +1,17 @@
+.Flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-transform: capitalize;
+  color: #dfdfea;
+}
+
+.Flex :first-child {
+  color: white;
+  font-size: 2rem;
+}
+@media (max-width: 738px) {
+  .Flex {
+    /* align-items: center; */
+  }
+}

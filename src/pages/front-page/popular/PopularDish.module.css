@@ -1,0 +1,168 @@
+.Casing {
+  position: relative;
+  width: 230px;
+  height: 250px;
+  /* background-color: red; */
+  margin-top: 7rem;
+}
+.PopularDish {
+  background-color: #fefefe;
+  /* width: 200px;
+  height: 200px; */
+  width: 100%;
+  height: 100%;
+  text-transform: capitalize;
+  border-radius: 20px;
+  padding: 0rem 1rem;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  /* position: relative; */
+  box-shadow: 0 5px 10px #77777773;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  transition: 0.2s ease-out;
+}
+
+.PopularDish:hover {
+  color: white;
+  background-color: #fcbc30;
+}
+
+.PopularDish:hover .Cart {
+  color: white;
+}
+.Cart {
+  color: #fcbc30;
+}
+.PopularDish img {
+  width: 70%;
+  height: 70%;
+  margin-top: 3rem;
+  position: absolute;
+  /* object-fit: cover; */
+  object-fit: contain;
+  left: 35px;
+  top: -70%;
+}
+.PopularDish h1 {
+  font-size: 1.2rem;
+}
+.Para {
+  text-align: left;
+  font-size: 0.8rem;
+  color: gray;
+  margin: 0.5rem 0rem;
+  /* word-break: break-all; */
+}
+.PopularDish:hover .Para {
+  color: white;
+}
+
+.CartNo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+@media (max-width: 540px) {
+  .PopularDish {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    /* background-color: salmon; */
+    width: 100%;
+    padding: 1rem;
+    place-items: center;
+  }
+  .PopularDish img {
+    position: static;
+    margin-top: 0rem;
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    width: 100%;
+    height: 100%;
+  }
+  .Casing {
+    position: static;
+    width: 100%;
+    margin-top: 0rem;
+  }
+  .PopularDish h1 {
+    text-align: left;
+  }
+  .CartNo {
+    width: 100%;
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  }
+}
+@media (max-width: 440px) {
+  .CartNo {
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 340px) {
+  .PopularDish h1 {
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+}
+.PopularDish2 {
+  background-color: #fcbc30;
+  width: 100%;
+  height: 100%;
+  text-transform: capitalize;
+  border-radius: 20px;
+  padding: 0rem 1rem;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  box-shadow: 0 5px 10px #77777773;
+  /* pointer-events: none; */
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  transition: 0.2s ease-out;
+}
+
+.PopularDish2:hover {
+  color: white;
+  background-color: #fcbc30;
+}
+
+.PopularDish2:hover .Cart {
+  color: white;
+}
+
+.PopularDish2 img {
+  width: 70%;
+  height: 70%;
+  margin-top: 3rem;
+  position: absolute;
+  object-fit: contain;
+  left: 35px;
+  top: -70%;
+}
+.PopularDish2 .Para {
+  color: white;
+}
+.PopularDish2 .Cart {
+  color: white;
+}
+.PopularDish2 h1 {
+  font-size: 1.2rem;
+}
+
+.PopularDish2:hover .Para {
+  color: white;
+}
