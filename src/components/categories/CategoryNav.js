@@ -33,7 +33,7 @@ const CategoryNav = () => {
       </Category>
       <Category path="/hamburger/popular">
         <img src={Burgar} alt="A Burgar Dish" />
-        <div>Burgar</div>
+        <div>hamburger</div>
       </Category>
     </div>
   );
