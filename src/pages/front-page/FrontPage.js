@@ -29,7 +29,7 @@ const FrontPage = () => {
     const popularDish = async () => {
       setLoading(true);
       const response = await fetch(
-        `https://api.edamam.com/api/food-database/v2/parser?ingr=${params.mealCat}&app_id=19c95833&app_key=868688e48e1dac083de08a63e20da010`
+        `https://api.edamam.com/api/food-database/v2/parser?ingr=${params.mealCat}&app_id=19c95833&app_key=${process.env.REACT_APP_FRONT_API_KEY}`
       );
       const resData = await response.json();
       const data = resData.hints.slice(2, 10);
